@@ -4,6 +4,7 @@ import NavBar from "./NavBar";
 import MoviesPage from "./MoviesPage";
 
 function App() {
+  //normally we'd be fetching this info
   const [movies, setMovies] = useState({
     1: { id: 1, title: "A River Runs Through It" },
     2: { id: 2, title: "Se7en" },
@@ -17,6 +18,7 @@ function App() {
         <Route path="/movies">
           <MoviesPage movies={movies} />
         </Route>
+        
         <Route exact path="/">
           <div>Home</div>
         </Route>
